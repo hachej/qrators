@@ -15,15 +15,6 @@ title: "rtk - Rust Token Killer"
 [Website](https://www.rtk-ai.app) | [GitHub](https://github.com/rtk-ai/rtk) | [Install](INSTALL.md)
 
 rtk filters and compresses command outputs before they reach your LLM context, saving 60-90% of tokens on common operations.
-# rtk - Rust Token Killer
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-**High-performance CLI proxy to minimize LLM token consumption.**
-
-[Website](https://www.rtk-ai.app) | [GitHub](https://github.com/rtk-ai/rtk) | [Install](INSTALL.md)
-
-rtk filters and compresses command outputs before they reach your LLM context, saving 60-90% of tokens on common operations.
 
 ## ⚠️ Important: Name Collision Warning
 
