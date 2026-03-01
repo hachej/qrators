@@ -8,75 +8,89 @@ title: "Malleable Software: Restoring User Agency in a World of Locked-Down Apps
 
 # Malleable Software: Restoring User Agency in a World of Locked-Down Apps
 
-**Authors:** Geoffrey Litt, Josh Horowitz, Peter van Hardenberg, Todd Matthews
-**Published:** Ink & Switch, June 2025
+**Authors:** Geoffrey Litt, Josh Horowitz, Peter van Hardenberg, and Todd Matthews
+**Published:** June 2025
+**Organization:** Ink & Switch
 
 ## Overview
 
-This essay presents a vision for computing systems that empower users to reshape their digital tools rather than passively accepting them as fixed products.
+This essay presents a vision for computing that empowers users to reshape their tools rather than passively accepting rigid applications.
 
-## Core Argument
+## Core Thesis
 
-The authors contend that modern software has become rigid and inflexible. As they observe, "when your tools don't work the way you need them to, you submit feedback and hope for the best." Instead, they propose **malleable software**—tools that users can adapt with minimal friction to suit their unique needs.
+The authors argue that personal computing has evolved into locked-down "appliances" when it should remain malleable "clay." They propose that modern computing infrastructure—from programming languages to app stores—treats users as passive recipients rather than active co-creators. Their vision: "tools that users can reshape with minimal friction to suit their unique needs."
 
-The contrast is striking: physical spaces naturally invite modification (a guitar maker arranging tools, a home cook organizing a kitchen), but digital environments resist change. The essay uses the example of an index card wall board that was abandoned when a team switched to rigid web-based project tracking software—a shift that paradoxically reduced the team's flexibility despite adding remote collaboration capabilities.
+## Key Design Patterns
 
-## Three Core Design Patterns
+### 1. Gentle Slope from User to Creator
 
-### 1. **Gentle Slope from User to Creator**
+Drawing on MacLean et al.'s research, the authors advocate for systems where customization difficulty increases gradually rather than presenting sudden "cliffs." Spreadsheets exemplify this: users can begin simply viewing cells and progress to complex formulas without abandoning the same tool.
 
-Rather than forcing users to choose between passive consumption or complete programming expertise, the authors advocate for systems offering incremental customization steps. They reference Allan MacLean's research on "User-Tailorable Systems," which emphasizes avoiding sharp "cliffs" in learning requirements.
+The gradient works in both directions—simplifying programming languages OR gradually exposing more power within familiar interfaces. HyperCard's level system demonstrated how explicit modes could guide users progressively deeper into modification capabilities.
 
-Spreadsheets exemplify this principle—users can start by viewing cells, progress to editing formulas, and eventually write complex calculations. Each step requires only modest additional skill.
+### 2. Tools, Not Apps
 
-### 2. **Tools Over Applications**
+The essay critiques applications as "specialized gadgets" (like avocado slicers) rather than general-purpose instruments. When software siloes data, users must manually coordinate across isolated programs. The authors advocate for composable tools operating on shared data—like how the desktop filesystem enables multiple applications to edit the same file.
 
-Apps function like "avocado slicers"—specialized gadgets suited to one task. A knife, by contrast, handles many purposes. The authors advocate breaking up monolithic applications into composable tools that share underlying data.
+Examples of shared-data approaches include:
+- Database builders like Airtable enabling multiple views of unified data
+- Webstrates supporting real-time collaboration across different editors
+- Compound-document systems like OpenDoc embedding multiple editors within one document
 
-The desktop filesystem demonstrates this principle: different programs can edit the same file, enabling flexible workflows. Modern examples include Airtable and Notion, where multiple views of shared data allow complementary interactions.
+### 3. Communal Creation
 
-### 3. **Communal Creation**
+Individual customization has limits. Communities—departments, companies, families—need shared solutions. The authors highlight how "local developers" emerge naturally in organizations, and how free-software communities demonstrate that distributed creation at multiple skill levels can succeed.
 
-Rather than expecting every individual to build systems from scratch, the authors emphasize local communities collaboratively developing shared solutions. Drawing on free software traditions, they highlight how "local developers" in organizations can guide colleagues up customization slopes.
+This approach supports what Shirky called "situated software": tools built for specific communities rather than global audiences, reducing complexity and enabling responsiveness.
 
-This approach acknowledges that not everyone needs advanced technical skills—just enough community members with appropriate expertise to maintain shared tools.
+## The Limitations of Current Approaches
 
-## Limitations of Current Approaches
+The essay acknowledges existing customization mechanisms while explaining their constraints:
 
-The essay evaluates existing customization strategies:
+- **Settings**: Only expose developer-anticipated options
+- **Plugins**: Require authorized extension points; difficult transition to creating one's own
+- **Modding**: Demands reverse-engineering; breaks with updates; fragile across versions
+- **Open source**: Access to code doesn't eliminate friction; requires significant expertise and environment setup
+- **AI-assisted coding**: Generates isolated applications; doesn't address composability or tweaking existing tools
 
-- **Settings**: Limited to pre-anticipated options
-- **Plugins**: Require authorized extension points that developers must design
-- **Modding**: Permissionless but brittle; creates maintenance burdens when underlying systems change
-- **Open source**: Theoretically editable but practically requires substantial expertise
-- **AI-assisted coding**: Useful for generating new isolated applications but doesn't address composability or modifying existing locked-down tools
+As the authors note, even AI assistance "alone does not address all the barriers." Generating one-off applications differs fundamentally from modifying existing integrated tools.
 
 ## Ink & Switch Prototypes
 
-The authors share research prototypes exploring malleability infrastructure:
+The research team has explored malleability across the computing stack:
 
-**PushPin** explored treating tools as UI components backed by synchronized JSON documents, enabling multiple interfaces for shared data.
+### Infrastructure Projects
 
-**Cambria** addressed schema compatibility by enabling tools to read and write data in preferred formats while maintaining live translation between schemas.
+**PushPin** demonstrated document functional reactive programming (DFRP)—decoupling data from UI by backing React components with synchronized Automerge documents. This enabled defining alternative views of existing data without rebuilding infrastructure.
 
-**Patchwork** stores both user data and software code in collaborative documents, supporting version control and bootstrapping—the team uses Patchwork internally for their own work, including writing this essay.
+**Cambria** addressed schema compatibility by supporting live translation between different data formats across tools, avoiding destructive migrations.
 
-**Dynamic document projects** (Potluck, Embark) explored enriching text and outline documents with interactive behavior without requiring traditional programming.
+**Farm** hosted software code itself as synced data, enabling real-time sharing and collaborative editing of tools.
 
-## Key Insights from Practice
+**Patchwork** integrated version control concepts accessible to non-engineers, treating both documents and code as first-class editable artifacts. The team uses it internally for writing, whiteboarding, and software development—a "bootstrapping" approach revealing opportunities for improvement through actual use.
 
-The authors note that opportunities for improvement emerge naturally within malleable systems. While developing this essay, they created a Section Word Counter tool when they needed to track section lengths—it took minutes rather than requiring formal project planning. The tool integrated seamlessly into existing workflows and could be shared simply via link.
+Within Patchwork, they built contextual tools (word counters, structure viewers) that emerged from identified needs during essay writing, demonstrating how malleable environments naturally surface customization opportunities.
 
-They also found that "AI assistance complements malleable environments" effectively. Rather than replacing human agency, AI can accelerate tool creation when combined with infrastructure supporting persistence and collaboration.
+### Dynamic Documents
 
-## Barriers Remaining
+**Potluck** allowed users to enrich plaintext notes with interactive behavior (recipe scaling, timers) by writing pattern detectors and formulas—keeping unstructured entry while optionally layering computation.
 
-The essay identifies substantial unresolved challenges:
+**Embark** applied this to travel planning using hierarchical outlines, embedding maps and calendars that maintained rich awareness of surrounding document context. Hovering a location highlighted it across views, creating cohesion impossible with restricted embedding models.
 
-- **Privacy and security**: How to support extensibility while protecting against malicious modifications
-- **Business models**: Sustainable funding for composable tools rather than monolithic applications
-- **Cultural shifts**: Cultivating user desire for agency and customization
+## Remaining Challenges
 
-## Conclusion
+The authors acknowledge substantial obstacles:
 
-The authors argue that "everyone deserves the right to evolve their digital environments." While acknowledging the daunting scale of change required, they invite researchers, platform developers, and software makers to reimagine computing around user agency. They note that malleable software may lack corporate consistency but gains "the kind of charm of an old house" through organic evolution reflecting genuine needs.
+**Privacy and security**: How do untrusted modifications of data-accessing tools avoid harm? Current prototypes focus on trusted collaborating groups.
+
+**Business models**: How do developers monetize composable tools versus applications?
+
+**Cultural shift**: Computing culture must value user agency and environmental adaptation, not just polish and ease of initial use.
+
+## Vision for Change
+
+The authors invite different stakeholders to participate: researchers reimagining computing metaphors; platform developers treating users as capable participants; product makers empowering customization rather than dictating all decisions.
+
+They acknowledge that malleable software may lack corporate polish but will develop the character of evolving spaces: "bearing witness to past uses and carrying traces of its past decisions, even as it evolves to meet the needs of the day."
+
+The fundamental argument: everyone deserves "the right to evolve their digital environments" as an expression of creative potential and agency in an increasingly code-defined world.
