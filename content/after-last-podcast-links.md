@@ -1,0 +1,38 @@
+# Links shared after last podcast
+
+Inferred cutoff: **2026-02-27**
+
+Total unique links found: **32**
+
+- [Scrapling: Adaptive Web Scraping Framework](https://github.com/D4Vinci/Scrapling)
+- [AI engineering podcast — OpenClaw, futur des métiers de la data, constitution des AI](https://www.linkedin.com/feed/update/urn:li:activity:7432736259565023232/?originTrackingId=%2FQtWSN9l%2Fqj9WHLuqiDEtg%3D%3D)
+- [Decompiling Netflix and Slack with Opus](https://x.com/ShrivuShankar/status/2027910368316821916)
+- [rtk - Rust Token Killer](https://github.com/rtk-ai/rtk)
+- [Agentation: Visual Feedback Tool for AI Agents](https://agentation.dev/)
+- [New agent-browser skill: Electron - Control Desktop Apps](https://x.com/ctatedev/status/2028128730132922760)
+- [Malleable Software: Restoring User Agency in a World of Locked-Down Apps](https://www.inkandswitch.com/essay/malleable-software/)
+- [Beeper - All Your Chats in One App](https://www.beeper.com/)
+- [Vibe Coding and the Maker Movement](https://read.technically.dev/p/vibe-coding-and-the-maker-movement?open=false)
+- [AI Video for History Lessons](https://x.com/venturetwins/status/2028182846217818486)
+- [Trade School 2.0 Opportunity](https://x.com/SahilBloom/status/2028112074337890711)
+- [Everything is Context: Agentic File System Abstraction for Context Engineering](https://arxiv.org/abs/2512.05470)
+- [Distribution is the Only Moat](https://x.com/damianplayer/status/2028162399610540495)
+- [Pi-Boomerang: Agent Extension for Context Management](https://x.com/nicopreme/status/2028503601119944851)
+- [Grill Me Skill](https://github.com/mattpocock/skills/blob/main/grill-me%2FSKILL.mdp)
+- [Grill Me Skill](https://github.com/mattpocock/skills/blob/main/grill-me/SKILL.md)
+- [MCP is dead. Long live the CLI](https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html)
+- [Moment v1](https://www.moment.dev/blog/moment-v1)
+- [Claude Code](https://github.com/anthropics/claude-code)
+- [Ryan Carson on X](https://x.com/ryancarson/status/2028901454996447296?s=20)
+- [Ryan Carson on X](https://x.com/ryancarson/status/2028916090596643078)
+- [Open-source orchestration for zero-human companies](https://github.com/paperclipai/paperclip)
+- [[Simon Willison’s Weblog](/)](https://simonwillison.net/2026/Mar/4/qwen/)
+- [List the 10 most recent files](https://github.com/googleworkspace/cli)
+- [How I built a sub-500ms latency voice agent from scratch](https://www.ntik.me/posts/voice-agent)
+- [Labor market impacts of AI: A new measure and early evidence](https://www.anthropic.com/research/labor-market-impacts)
+- [Building Kepler](https://www.astronomer.io/blog/building-kepler-astronomer-internal-data-assistant/)
+- [Building a context layer from the ground up](https://medium.com/gorgias-engineering/building-a-context-layer-from-the-ground-up-d6f72713915a)
+- [news.ycombinator.com](https://news.ycombinator.com/item?id=47208398)
+- [polsia.com](https://polsia.com/)
+- [NanoCorp — AI companies that work while you sleep.](https://www.nanocorp.so/)
+- [George on X](https://x.com/odysseus0z/status/2030413782036726181)
